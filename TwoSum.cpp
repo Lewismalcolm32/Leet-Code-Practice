@@ -9,10 +9,12 @@
 //
 // Because nums[0] + nums[1] = 2 + 7 = 9,
 // return [0, 1].
+#include <vector>
+#include <iostream>
+using namespace std;
 
-
-class Solution {
-public:
+// class Solution {
+// public:
     vector<int> twoSum(vector<int>& nums, int target) {
 
         vector<int> sum;
@@ -26,7 +28,7 @@ public:
                         ++j;
                     }
 
-                if (nums[i] + nums [j] == target)
+                if (nums[i] + nums[j] == target)
                     {
                         sum.push_back(i);
                         sum.push_back(j);
@@ -39,11 +41,12 @@ public:
         sum.push_back(-1);
         return sum;
     }
-};
+// };
 
 int main(){
   vector<int> number = {1,2,3,4};
+  vector<int> printOut;
   int target = 4;
-
-  twoSum(number, target);
+  printOut = twoSum(number, target);
+  cout<<"The two sum for target will be "<<number[printOut[0]]<<" and "<<number[printOut[1]]<<endl;
 }

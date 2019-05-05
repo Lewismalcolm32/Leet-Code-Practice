@@ -20,6 +20,11 @@
 //
 // 1 <= A.length = A[0].length <= 20
 // 0 <= A[i][j] <= 1
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
 
 class Solution {
 public:
@@ -74,4 +79,4 @@ public:
 
 //Ok so I am runing two inner loops! I feel like that a time complexity of O(n^2), and space of like... O(n)
 
-//How... can I make this faster? 
+//How... can I make this faster?
